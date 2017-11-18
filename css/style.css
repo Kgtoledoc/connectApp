@@ -3,3 +3,16 @@
   border-color: inherit;
 
 }
+div .wrapper {
+  width: 650px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #555;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.contact-item {
+  border-bottom: thin solid #ccc;
+  padding: 10px;
+}
