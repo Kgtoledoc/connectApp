@@ -16,3 +16,6 @@ div .wrapper {
   border-bottom: thin solid #ccc;
   padding: 10px;
 }
+.btn-primary {
+  border-radius: 50% !important;
+}
