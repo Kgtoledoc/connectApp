@@ -3,19 +3,47 @@
   border-color: inherit;
 
 }
+
+.btn-primary {
+  height:100% !important;
+
+}
+
+
 div .wrapper {
-  width: 700px;
+  width:800px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px #555;
-  border:1px black solid;
+
   background: #fff;
   margin-bottom: 20px;
   padding: 50px;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBFDd4KZQ4m3bKYFtLrzlIk0nm209Vmmr2kPs2z3N8R7zXN_u);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover ;
   font-weight: bold;
   color: #fff;
+}
+
+.textUsers {
+  width: 200px;
+  text-align: left;
+  font-size: 12px;
+  
+
+}
+
+.button {
+  float: right;
+}
+
+.newBoton {
+  /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Add-circular-button-thin-symbol.svg/120px-Add-circular-button-thin-symbol.svg.png);*/
+  border-radius: 200px;
+  background-color: transparent;
+  border:1px black solid;
+  text-align: right;
+
 }
 
 
@@ -24,13 +52,7 @@ div .wrapper {
   border-bottom: thin solid #ccc;
   padding: 10px;
 }
-.newBoton{
-  border-radius: 50% !important;
-  opacity: 0.5;
 
-
-
-}
 
 
 .footer {

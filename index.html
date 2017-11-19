@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConnectApp</title>
-    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
@@ -40,13 +40,15 @@
     <section ng-app="app" class="main container" ng-controller="appController">
       <div class="">
         <div class="wrapper" ng-repeat="data in datos">
-          <div>
-            <h2>{{data.name}}</h2>
-            <h3>{{data.address.street}}</h3>
-            <button type="submit" class="btn btn-default newBoton">
-                <span></span>
+          <div class="textUsers">
+            <h3>{{data.name}}</h3>
+            <h4>{{data.address.street}}</h4>
+          </div>
+          <div class="button">
+            <button type="submit" class="newBoton">
+                <span>+</span>
             </button>
-            </form>
+
           </div>
         </div>
 
