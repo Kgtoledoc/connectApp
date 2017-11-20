@@ -1,5 +1,5 @@
 .navbar-default{
-  background-color: #4373a7 !important;
+  background-color: #2495F3 !important;
   border-color: inherit;
 
 }
@@ -10,26 +10,45 @@
 }
 
 
-div .wrapper {
-  width:800px;
-  margin: 0 auto;
-  box-shadow: 5px 5px 5px #555;
 
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 50px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBFDd4KZQ4m3bKYFtLrzlIk0nm209Vmmr2kPs2z3N8R7zXN_u);
-  background-repeat: no-repeat;
-  background-size: cover ;
-  font-weight: bold;
-  color: #fff;
+
+@media (max-width: 767px) {
+    .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #555;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBFDd4KZQ4m3bKYFtLrzlIk0nm209Vmmr2kPs2z3N8R7zXN_u);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    font-weight: bold;
+    color: #fff;
+  }
+  }
+
+@media (min-width: 768px) and (max-width: 2000px){
+    .wrapper {
+    width: 750px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #555;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBFDd4KZQ4m3bKYFtLrzlIk0nm209Vmmr2kPs2z3N8R7zXN_u);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 
 .textUsers {
   width: 200px;
   text-align: left;
   font-size: 12px;
-  
+
 
 }
 
