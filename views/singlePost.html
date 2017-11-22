@@ -1,25 +1,39 @@
-<div class="container">
-    <div class="post clearfix">
-      <a href="#" class="thum pull-left">
-        <img src="img/tigre.jpeg" alt="Imagen de tigre">
-      </a>
-
-
+<div class="top-users">
+  <div class="info">
+    <div class="post clearfix">      
+       <img class="img-responsive" src="img/tigre.jpeg" alt="Imagen de tigre">
     </div>
 
-    <div  ng-controller="appController1">
-      <h2 class="post-title">{{datos1.name}}</h2>
+    <div class="user" ng-controller="appController1">
+      <h2 class="post-title">{{datos1.username}}</h2>
+      <p class="post-name">{{datos1.name}}</p> 
       <p>{{datos1.email}}</p>
+      </br>
       <p>{{datos1.address.street}}</p>
       <p>{{datos1.company.name}}</p>
-      <p>{{datos1.company.catchPhrase}}</p>
+      </br>
+      </br>     
+
+      <p><i>"{{datos1.company.catchPhrase}}"</i></p>
     </div>
   </div>
 
-  <div class="" ng-controller="singlePostController">
-    <p>{{post.title}}</p>
-    <p>{{post.body}}</p>
+    
+
+  <div class="container">
+    <div class="container-comment">
+      <div ng-controller="appController1">
+      <p class="post-name-comment">{{datos1.name}}</p>
+    </div>
+
+    <div class="container-body-comment" ng-controller="singlePostController">
+      <p>{{post.title}}</p>
+      <p>{{post.body}}</p>
+    </div>
   </div>
+    </div>
+    
+  
 
 
 </div>
