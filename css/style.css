@@ -61,13 +61,7 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
 }
 
-.newBoton {
-  /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Add-circular-button-thin-symbol.svg/120px-Add-circular-button-thin-symbol.svg.png);*/
-  border-radius: 200px;
-  background-color: transparent;
-  border:1px black solid;
-  text-align: right;
-}
+
 
 
 .container-description{
@@ -95,6 +89,14 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 .container-description button:hover{
   background-color: #000000;
 }
+
+.container-description button a{ 
+  color: white;
+ }
+
+ .container-description button a:hover{ 
+  text-decoration: none;
+ }
 
 .contact-item {
   border-bottom: thin solid #ccc;
