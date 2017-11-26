@@ -32,13 +32,11 @@
       </div>
       <br/>
       <div class="numberComment" ng-controller="commentController">
-        <p>{{comment.length}} commentarios</p>
+        <p class="firstChild">{{comment.length}} commentarios</p>
         <button ng-click="showForm()" type="submit" class="btn btn-primary">+</button>
-      </div>
+      <div>
 
-      <div ng-controller="commentController" >
-        <div class="comments-body">
-
+        <div class="comments-body" ng-hide="formVisibility">
           <div class="comments" ng-repeat="datos in comment">
             <p>{{datos.email}}</p>
             <p>{{datos.body}}</p>
@@ -46,7 +44,7 @@
 
         </div>
       </div>
-
+    </div>
 
     </div>
 

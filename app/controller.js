@@ -16,8 +16,23 @@ angular.module('app.Controller', [])
     });
 
   }).controller('commentController', function($scope,$http){
-    $http.get('data/comments.json').success(function(data2){
-      console.log("Hola mundo");
-      $scope.comment = data2;
+      $scope.formVisibility = true;
+      console.log($scope.formVisibility)
+      //$scope.showForm = function(){
+        //$scope.formVisibility = true;
+        //console.log(formVisibility);
+      //};//
+      $http.get('data/comments.json').success(function(data2){
+        $scope.comment = data2;
     });
+    $scope.showForm = function(){
+      if($scope.formVisibility){
+        $scope.formVisibility = false;
+
+      }else {
+        $scope.formVisibility = true;
+      }
+
+      console.log($scope.formVisibility);
+    };
   });

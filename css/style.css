@@ -151,14 +151,12 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
 
 }
-.numberComment {
-  text-align: right;
 
-}
 
-.numberComment p {
+.firstChild{
   padding-right:50px;
   padding-bottom: 10px;
+  text-align: right;
 
 }
 
@@ -204,9 +202,10 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 }
 
 .comments {
+  text-align: left !important;
   border-top:1px solid lightslategrey;
   background-color: #F2F2F2;
-  padding: 25px; 
+  padding: 25px;
 }
 
 .comments p {
