@@ -33,18 +33,20 @@
       <br/>
       <div class="numberComment" ng-controller="commentController">
         <p>{{comment.length}} commentarios</p>
-        <button type="submit" class="btn btn-primary">+</button>
+        <button ng-click="showForm()" type="submit" class="btn btn-primary">+</button>
       </div>
 
+      <div ng-controller="commentController" >
+        <div class="comments-body">
 
-      <div class="comments-body" ng-controller="commentController">
+          <div class="comments" ng-repeat="datos in comment">
+            <p>{{datos.email}}</p>
+            <p>{{datos.body}}</p>
+          </div>
 
-        <div class="comments" ng-repeat="datos in comment">
-          <p>{{datos.email}}</p>
-          <p>{{datos.body}}</p>
         </div>
-
       </div>
+
 
     </div>
 
