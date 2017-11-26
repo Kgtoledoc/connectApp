@@ -90,11 +90,11 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
   background-color: #000000;
 }
 
-.container-description button a{ 
+.container-description button a{
   color: white;
  }
 
- .container-description button a:hover{ 
+ .container-description button a:hover{
   text-decoration: none;
  }
 
@@ -122,19 +122,19 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 .info{
   display: flex;
   border-bottom: 1px solid lightslategrey;
-  
+
 }
 .post {
   margin-top: -20px;
   width: 37.5%;
 
 
-  
+
 }
 
 .user {
   width: 60%;
-  padding-left: 120px; 
+  padding-left: 120px;
   line-height: 10px;
   font-family: sans-serif;
 
@@ -151,14 +151,39 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
 
 }
+.numberComment {
+  text-align: right;
+
+}
+
+.numberComment p {
+  padding-right:50px;
+  padding-bottom: 10px;
+
+}
+
+.numberComment button{
+    background-color: transparent;
+    color: #2495F3;
+    border: solid 1px #2495F3;
+    border-radius: 50%;
+    float: right;
+    line-height: 15px;
+    font-size: 15px;
+    margin-top: -50px;
+}
+.numberComment button:hover{
+    background-color: #000000;
+  }
+
 
 .post-name {
   font-weight: bold;
   font-size: 2em;
 }
 
-.container-comment {  
-  padding: 50px 185px 50px; 
+.container-comment {
+  padding: 50px 185px 50px;
   border-bottom: 1px solid lightslategrey;
 }
 
@@ -169,7 +194,23 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
 .container-comment-body {
   line-height: 10px;
-  font-size: 
+  font-size:
   font-family
 
+}
+
+.comments-body {
+  border-bottom: 1px solid lightslategrey;
+}
+
+.comments {
+  border-top:1px solid lightslategrey;
+  background-color: #F2F2F2;
+  padding: 25px; 
+}
+
+.comments p {
+
+  margin-bottom:-2px;
+  background-color: #F2F2F2;
 }

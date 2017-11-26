@@ -14,4 +14,10 @@ angular.module('app.Controller', [])
     $http.get('data/users.json').success(function(data){
       $scope.datos1 = data[$routeParams.id];
     });
+
+  }).controller('commentController', function($scope,$http){
+    $http.get('data/comments.json').success(function(data2){
+      console.log("Hola mundo");
+      $scope.comment = data2;
+    });
   });

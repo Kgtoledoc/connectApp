@@ -1,39 +1,52 @@
-<div class="top-users">
-  <div class="info">
-    <div class="post clearfix">      
+<div class="info">
+    <div class="post clearfix">
        <img class="img-responsive" src="img/tigre.jpeg" alt="Imagen de tigre">
     </div>
 
     <div class="user" ng-controller="appController1">
       <h2 class="post-title">{{datos1.username}}</h2>
-      <p class="post-name">{{datos1.name}}</p> 
+      <p class="post-name">{{datos1.name}}</p>
       <p>{{datos1.email}}</p>
       </br>
       <p>{{datos1.address.street}}</p>
       <p>{{datos1.company.name}}</p>
       </br>
-      </br>     
-
+      </br>
       <p><i>"{{datos1.company.catchPhrase}}"</i></p>
     </div>
-  </div>
+</div>
 
-    
 
-  <div class="container">
+
+<div class="container">
     <div class="container-comment">
       <div ng-controller="appController1">
-      <p class="post-name-comment">{{datos1.name}}</p>
-    </div>
+        <p class="post-name-comment">{{datos1.name}}</p>
+      </div>
+      <br/>
+      <br/>
 
-    <div class="container-body-comment" ng-controller="singlePostController">
-      <p>{{post.title}}</p>
-      <p>{{post.body}}</p>
+      <div class="container-body-comment" ng-controller="singlePostController">
+        <p>{{post.title}}</p>
+        <p>{{post.body}}</p>
+      </div>
+      <br/>
+      <div class="numberComment" ng-controller="commentController">
+        <p>{{comment.length}} commentarios</p>
+        <button type="submit" class="btn btn-primary">+</button>
+      </div>
+
+
+      <div class="comments-body" ng-controller="commentController">
+
+        <div class="comments" ng-repeat="datos in comment">
+          <p>{{datos.email}}</p>
+          <p>{{datos.body}}</p>
+        </div>
+
+      </div>
+
     </div>
-  </div>
-    </div>
-    
-  
 
 
 </div>
