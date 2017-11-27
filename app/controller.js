@@ -16,13 +16,8 @@ angular.module('app.Controller', [])
     });
 
   }).controller('commentController', function($scope,$http){
-      $scope.simbol = "+"
+      $scope.simbol = "+";
       $scope.formVisibility = true;
-      console.log($scope.formVisibility)
-      //$scope.showForm = function(){
-        //$scope.formVisibility = true;
-        //console.log(formVisibility);
-      //};//
       $http.get('data/comments.json').success(function(data2){
         $scope.comment = data2;
     });
@@ -35,7 +30,5 @@ angular.module('app.Controller', [])
         $scope.formVisibility = true;
         $scope.simbol = "+";
       }
-
-      console.log($scope.formVisibility);
     };
   });
