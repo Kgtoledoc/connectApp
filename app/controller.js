@@ -16,6 +16,7 @@ angular.module('app.Controller', [])
     });
 
   }).controller('commentController', function($scope,$http){
+      $scope.simbol = "+"
       $scope.formVisibility = true;
       console.log($scope.formVisibility)
       //$scope.showForm = function(){
@@ -28,9 +29,11 @@ angular.module('app.Controller', [])
     $scope.showForm = function(){
       if($scope.formVisibility){
         $scope.formVisibility = false;
+        $scope.simbol = "-";
 
       }else {
         $scope.formVisibility = true;
+        $scope.simbol = "+";
       }
 
       console.log($scope.formVisibility);
